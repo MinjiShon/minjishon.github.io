@@ -23,7 +23,7 @@ NAME      = "Minji Shon"
 SUBTITLE  = ["Ph.D. Candidate · Electrical & Computer Engineering",
              "Georgia Institute of Technology"]
 DESC      = ["Reliability- and thermal-aware DTCO/STCO for advanced 3D logic and memory",
-             "7 years of Samsung Design-for-Reliability"]
+             "Reliability intern at Intel \u00b7 7 years of Samsung Design-for-Reliability"]
 URL       = "minjishon.github.io"
 LOGOS     = [("assets/logos/gatech.png", 72),
              ("assets/logos/intel.png", 54),
@@ -70,7 +70,7 @@ def main():
     # sizes calibrated against the original card's measured text widths
     f_name = ImageFont.truetype(SERIF_B, fit(SERIF_B, NAME, 497))
     f_sub  = ImageFont.truetype(SERIF,   fit(SERIF, SUBTITLE[1], 432))
-    f_desc = ImageFont.truetype(SANS,    fit(SANS, DESC[0], 900))
+    f_desc = ImageFont.truetype(SANS,    min(fit(SANS, ln, 900) for ln in DESC))
     f_url  = ImageFont.truetype(SANS,    fit(SANS, URL, 189))
 
     d.text((MARGIN, 105), NAME, font=f_name, fill=WHITE, anchor="la")
