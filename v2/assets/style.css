@@ -260,7 +260,7 @@ section + section { border-top: 1px solid var(--line-soft); }
 }
 .research-item:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .research-item .thumb { background: var(--image-bg); border-bottom: 1px solid var(--line); padding: 10px; }
-.research-item .thumb img { width: 100%; aspect-ratio: 2.2 / 1; object-fit: contain; }
+.research-item .thumb img { width: 100%; height: auto; display: block; border-radius: 3px; }
 .research-item .body { padding: 16px 18px 18px; }
 .research-item h3 { margin-bottom: 7px; }
 .research-item h3::before {
