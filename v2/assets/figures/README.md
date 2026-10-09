@@ -9,11 +9,13 @@ them. Nothing was downloaded or generated.
 |---|---|---|
 | `hero-scaling.jpg` | About, wide figure under the first paragraph | supplied by Minji as `scaling.pdf` (credited 2026 VLSI Short Course, IBM) |
 | `stack-integration.jpg` | About, wide figure replacing the old three-up strip | supplied by Minji as `fig1.png` |
-| `pdk-gds.jpg` | Research card 1, and publication [L1] | `Paper_Writing/2026_JXCDC/jxcdc-paper/figures/gds.png` |
-| `thermal-delay.jpg` | Research card 2, and publication [R1] | `Paper_Writing/2026_IEDM/Figures/F1_thermal_delay.png` |
-| `fe-nand.jpg` | Research card 3 | `PhD_Thesis/Proposal/paper/figures/fig2.12.png` |
-| `memory-pyramid.jpg` | Research card 4 | `PhD_Thesis/Proposal/paper/figures/fig1.4.png` |
-| `dtco-flow.jpg` | Research, wide figure at the end of the section | `Paper_Writing/2026_IEDM/Figures/fig-framework.png` |
+| `pdk.jpg` | Research card 1, CFET DTCO & Open PDK | supplied by Minji as `pdk.pdf` |
+| `thermal.jpg` | Research card 2, Electro-Thermal Co-Design | supplied by Minji as `thermal.pdf` |
+| `ferro.jpg` | Research card 3, Ferroelectric Devices | supplied by Minji as `ferro.pdf` |
+| `dcim.png` | Research card 4, 3D Compute-in-Memory | supplied by Minji as `dcim.pdf` |
+| `pdk-gds.jpg` | Publication thumbnail [L1] only | `Paper_Writing/2026_JXCDC/jxcdc-paper/figures/gds.png` |
+| `thermal-delay.jpg` | Publication thumbnail [R1] only | `Paper_Writing/2026_IEDM/Figures/F1_thermal_delay.png` |
+| `dtco-flow.jpg` | Research, wide figure at the end of the section — **still a placeholder** | `Paper_Writing/2026_IEDM/Figures/fig-framework.png` |
 
 Note that `Paper_Writing/2026_IEDM/` is the DeepSim electro-thermal paper now
 retargeted to IRPS'27, so those figures belong to [R1].
