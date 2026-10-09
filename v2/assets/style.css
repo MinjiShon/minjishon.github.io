@@ -394,6 +394,16 @@ section + section { border-top: 1px solid var(--line-soft); }
   padding: 6px; align-self: start;
 }
 .pub-thumb img { width: 100%; height: auto; display: block; border-radius: 3px; }
+/* an entry whose figure cannot be shown gets the employer's mark instead */
+.pub-thumb.logo-tile {
+  display: grid; place-items: center; aspect-ratio: 3 / 2; padding: 0;
+  background: linear-gradient(150deg, var(--navy) 0%, var(--navy-deep) 100%);
+  border-color: var(--navy-deep);
+}
+.pub-thumb.logo-tile img {
+  width: 66%; height: auto; filter: brightness(0) invert(1); opacity: .92;
+}
+
 /* entries without a figure get a navy monogram tile rather than a gap */
 .pub-thumb.empty {
   display: grid; place-items: center; aspect-ratio: 3 / 2; padding: 0;
