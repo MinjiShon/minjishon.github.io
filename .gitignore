@@ -1,2 +1,6 @@
 .DS_Store
 .claude/
+
+# figure drop folder: sources stay local, only the README ships
+v2/assets/figures/_inbox/*
+!v2/assets/figures/_inbox/README.md
