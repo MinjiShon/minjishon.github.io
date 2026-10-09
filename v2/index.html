@@ -241,9 +241,123 @@
 
     </div>
 
-    <figure class="figure-wide" style="margin-top:26px">
-      <img src="assets/figures/pdk-benchmark.png" width="1168" height="568" loading="lazy"
-           alt="Comparison table of open process design kits. ASAP7 from ASU at 7 nm FinFET, ASAP5 from ASU at 5 nm nanowire FET, FreePDK3 from NCSU at 3 nm gate-all-around nanosheet, GT3 from Georgia Tech at 3 nm, and USC 3N-2D at 3 nm are all 2D integration. MATRIX-A5 from Georgia Tech is A5 node, CFET, 3D stacked device, and is the only entry combining a standard-cell library, multi-threshold-voltage flavors, temperature corners, an RTL-to-GDS flow and backside power delivery">
+    <figure class="figure-wide table-figure">
+      <div class="table-scroll">
+        <table class="pdk-table">
+          <caption class="sr-only">
+            Open process design kits compared by institution, node, device, integration,
+            standard-cell library, multi-threshold-voltage flavors, temperature corners,
+            RTL-to-GDS flow, backside power delivery and availability.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">Capability</span></th>
+              <th scope="col">ASAP7</th>
+              <th scope="col">ASAP5</th>
+              <th scope="col">FreePDK3</th>
+              <th scope="col">GT3</th>
+              <th scope="col">USC 3N-2D</th>
+              <th scope="col" class="ours">MATRIX-A5<span class="sub">(this work)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Institution</th>
+              <td>ASU</td>
+              <td>ASU</td>
+              <td>NCSU</td>
+              <td>Georgia Tech</td>
+              <td>USC (SCCAD)</td>
+              <td class="ours">Georgia Tech</td>
+            </tr>
+            <tr>
+              <th scope="row">Node</th>
+              <td>7 nm</td>
+              <td>5 nm</td>
+              <td>3 nm</td>
+              <td>3 nm</td>
+              <td>3 nm</td>
+              <td class="ours">A5</td>
+            </tr>
+            <tr class="key">
+              <th scope="row">Device</th>
+              <td>FinFET</td>
+              <td>NWFET</td>
+              <td>GAA NS</td>
+              <td>GAA NS</td>
+              <td>GAA NS</td>
+              <td class="ours">CFET</td>
+            </tr>
+            <tr class="key">
+              <th scope="row">Integration</th>
+              <td>2D</td>
+              <td>2D</td>
+              <td>2D</td>
+              <td>2D</td>
+              <td>2D</td>
+              <td class="ours">3D stacked device</td>
+            </tr>
+            <tr>
+              <th scope="row">Standard-cell library</th>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td class="ours"><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Multi-V<sub>th</sub> flavors</th>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td class="ours"><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Temperature corners</th>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td class="ours"><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th scope="row">RTL-to-GDS flow</th>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td class="ours"><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Backside power (BSPDN)</th>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark no" role="img" aria-label="not supported">&#10007;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+              <td class="ours"><span class="mark yes" role="img" aria-label="supported">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Availability</th>
+              <td>open</td>
+              <td>open</td>
+              <td>open</td>
+              <td>open</td>
+              <td>open</td>
+              <td class="ours">will be open</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-legend">
+        <span><span class="mark yes" aria-hidden="true">&#10003;</span> supported</span>
+        <span><span class="mark no" aria-hidden="true">&#10007;</span> not supported</span>
+      </div>
       <figcaption>
         Where MATRIX-A5 sits among open research PDKs. The others are 2D integration on FinFET,
         nanowire or gate-all-around nanosheet devices; MATRIX-A5 is the only CFET-based, 3D
