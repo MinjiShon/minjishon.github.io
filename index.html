@@ -187,6 +187,7 @@
             TCAD-calibrated device models and multi-tier standard-cell libraries that make academic
             DTCO research possible — cell- to block-level PPA and routing-congestion benchmarking on
             commercial Cadence/Synopsys flows, driven through a RISC-V core and a systolic array.
+            <span class="ref">[<a href="publications.html#L1">L1</a>, <a href="publications.html#L2">L2</a>, <a href="publications.html#L3">L3</a>]</span>
           </p>
         </div>
       </div>
@@ -202,6 +203,7 @@
             Device-to-system electro-thermal frameworks for multi-tier CFET and GAA nanosheet with
             backside power delivery — including GPU-accelerated multi-physics simulation and
             layout-resolved thermal analysis to address thermal constraints in 3D scaling.
+            <span class="ref">[<a href="publications.html#R1">R1</a>, <a href="publications.html#R2">R2</a>]</span>
           </p>
         </div>
       </div>
@@ -217,6 +219,7 @@
             Time-dependent Sentaurus models of the trap and polarization interplay in FeFET and
             Fe-NAND stacks, spanning gate-stack and channel-side interlayer engineering, with memory
             window, retention, and disturb quantified.
+            <span class="ref">[<a href="publications.html#F1">F1</a>, <a href="publications.html#F2">F2</a>, <a href="publications.html#F3">F3</a>, <a href="publications.html#F4">F4</a>]</span>
           </p>
         </div>
       </div>
@@ -232,6 +235,7 @@
             Digital compute-in-memory benchmarking on A5 CFET technology, extended to
             look-up-table-based power efficient design, targeting the memory wall across the memory
             pyramid.
+            <span class="ref">[<a href="publications.html#L4">L4</a>]</span>
           </p>
         </div>
       </div>
@@ -390,32 +394,42 @@
       <div class="t-entry">
         <div class="t-head">
           <h3>Graduate Research Assistant</h3>
-          <span class="t-date">Aug 2023 – Aug 2026</span>
+          <span class="t-date">Aug 2023 – Present</span>
           <span class="t-logo"><img src="assets/logos/gatech.png" alt="Georgia Tech"></span>
         </div>
         <div class="t-sub">Georgia Institute of Technology · Atlanta, GA · SRC Research Scholar (SPARC)</div>
         <div class="t-body">
           <ul>
-            <li><strong>Open CFET PDK, multi-tier CFET RTL-to-GDS flow &amp; DTCO/STCO</strong> —
-              TCAD-calibrated device models and an open-source CFET PDK (six 67-cell library variants)
-              taken through full RTL-to-GDS in commercial Cadence/Synopsys EDA; <strong>40% logic</strong>
-              and <strong>43% SRAM</strong> cell-footprint reduction from 2-tier to 4-tier, with cell-
-              to block-level PPA and routing-congestion benchmarking (RISC-V core, systolic array).</li>
+            <li><strong>Open-source CFET PDK and multi-tier DTCO/STCO</strong> —
+              TCAD-calibrated device models and the first open-source sequential-CFET PDK
+              (six 67-cell library variants) taken through a complete RTL-to-GDSII flow;
+              <strong>40% logic</strong> and <strong>43% SRAM</strong> cell-footprint reduction
+              from 2-tier to 4-tier. <span class="ref">[<a href="publications.html#L1">L1</a>, <a href="publications.html#L2">L2</a>, <a href="publications.html#L3">L3</a>]</span></li>
+            <li><strong>Block-level technology benchmark</strong> — a RISC-V core and a
+              16&times;16 systolic array through synthesis, place-and-route, and timing and power
+              analysis: CFET cut standard-cell area <strong>27.5%</strong> against a GAA-nanosheet
+              baseline for a <strong>14.5%</strong> power cost at iso-frequency, and a hybrid-row
+              track-mixing scheme (<strong>CFlex</strong>) closed a <strong>1.5 ns</strong> clock
+              that a dense-only library could not meet. <span class="ref">[<a href="publications.html#L1">L1</a>]</span></li>
             <li><strong>Reliability-aware co-optimization</strong> — device-to-circuit electro-thermal
               framework (TCAD to self-heating-aware compact model to ring-oscillator analysis) showing
-              that <strong>backside power delivery</strong> traps heat and costs
-              <strong>&gt;10% frequency degradation</strong> at overdrive; GPU-accelerated
-              multi-physics (DeepSim) extended to multi-tier CFET for layout-resolved analysis.</li>
-            <li><strong>Broader contributions across the memory pyramid</strong> — CFET digital
-              compute-in-memory (DCIM) addressing the memory wall, and ferroelectric gate-stack and
-              channel-side interlayer modeling in FeFET and Fe-NAND stacks, where a
-              gate-injection-layer stack <strong>more than doubles the memory window</strong>.</li>
+              that <strong>backside power delivery</strong> traps heat: over <strong>10%</strong>
+              ring-oscillator frequency degradation at 1.3 V, against under <strong>5%</strong> with
+              frontside delivery; GPU-accelerated multi-physics (DeepSim) extended to multi-tier CFET
+              for layout-resolved analysis. <span class="ref">[<a href="publications.html#R1">R1</a>, <a href="publications.html#R2">R2</a>]</span></li>
+            <li><strong>Memory devices and in-memory compute</strong> — CFET digital
+              compute-in-memory (DCIM) against the memory wall, and ferroelectric gate-stack and
+              channel-side interlayer modeling in FeFET and Fe-NAND, where a
+              gate-injection-layer stack <strong>more than doubles the memory window</strong>.
+              <span class="ref">[<a href="publications.html#L4">L4</a>, <a href="publications.html#F1">F1</a>, <a href="publications.html#F3">F3</a>, <a href="publications.html#F4">F4</a>]</span></li>
           </ul>
           <div class="tags">
             <span class="tag">CFET</span>
             <span class="tag">DTCO / STCO</span>
             <span class="tag">TCAD</span>
-            <span class="tag">RTL-to-GDS</span>
+            <span class="tag">RTL-to-GDSII</span>
+            <span class="tag">Physical design</span>
+            <span class="tag">STA</span>
             <span class="tag">Electro-thermal</span>
           </div>
         </div>
@@ -510,7 +524,8 @@
       <div class="skill-row">
         <dt>Focus</dt>
         <dd>Reliability- and thermal-aware DTCO/STCO; multi-tier CFET and 3D integration;
-          ferroelectric device modeling; aging and reliability sign-off.</dd>
+          physical design and timing closure; ferroelectric device modeling;
+          aging and reliability sign-off.</dd>
       </div>
       <div class="skill-row">
         <dt>Reliability physics &amp; sign-off</dt>
@@ -522,9 +537,12 @@
         <dd>Sentaurus electro-thermal device/process; BSIM-CMG compact modeling.</dd>
       </div>
       <div class="skill-row">
-        <dt>VLSI design</dt>
-        <dd>Cadence and Synopsys synthesis, P&amp;R, and reliability sign-off; full PDK build and
-          verification (LIB/LEF, LPE, DRC/LVS); critical-path timing-margin analysis.</dd>
+        <dt>VLSI design &amp; implementation</dt>
+        <dd>Synopsys Design Compiler; Cadence Innovus (place-and-route, floorplan, CTS,
+          congestion and timing closure); static timing analysis (Cadence Tempus); power analysis;
+          parasitic extraction (Quantus, StarRC); custom cell layout (Cadence Virtuoso);
+          full PDK build and verification (LIB/LEF, LPE, DRC/LVS); reliability sign-off and
+          critical-path timing-margin analysis.</dd>
       </div>
       <div class="skill-row">
         <dt>Circuit simulation</dt>
