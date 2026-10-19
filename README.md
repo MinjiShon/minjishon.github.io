@@ -3,17 +3,37 @@
 Static site (plain HTML + CSS, no build step, no dependencies).
 All content is drawn from `../overleaf_cv/main.tex` and `../CV_update.md`.
 
+**Two versions live in this repo.** The richer v2 build was promoted to the root
+URL on 2026-10-18 so that the link printed on every CV variant
+(`minjishon.github.io`) now serves it. The original is kept as a backup.
+
+| Version | URL | Role |
+|---|---|---|
+| **v2** (now at the root) | <https://minjishon.github.io> | **Live site.** What recruiters see. |
+| **v1** | <https://minjishon.github.io/v1/> | Backup of the original build. `noindex`, so it does not compete in search. |
+| `/v2/` | redirects to the root | Stubs kept so any previously shared `/v2/` link still works. |
+
 ```
 personal_website/
-├── index.html          Home: about, research, experience, education, skills, awards, contact
-├── publications.html   Publications grouped by topic, with DOI links
-├── cv.html             Embedded PDF viewer + download
+├── index.html          LIVE (v2) Home: about, research, experience, education, skills, awards, contact
+├── publications.html   LIVE (v2) Publications grouped by topic, with DOI links
+├── cv.html             LIVE (v2) Embedded PDF viewer + download
 ├── .nojekyll           Tells GitHub Pages to serve files as-is
-└── assets/
-    ├── style.css       All styling (light + dark mode)
-    ├── Minji_Shon_CV.pdf
-    └── logos/          gatech, samsung, intel, sogang, uconn
+├── make_og_card.py     Regenerates assets/og-card.png
+├── assets/             LIVE (v2) assets
+│   ├── style.css       All styling (light + dark mode)
+│   ├── Minji_Shon_CV.pdf
+│   ├── og-card.png     Social-preview card (referenced by all three pages)
+│   ├── figures/        Research and publication figures (v2 only)
+│   ├── talks/          Placeholder for talk slides
+│   └── logos/          gatech, samsung, intel, sogang, uconn
+├── v1/                 BACKUP of the original site, with its own assets/
+└── v2/                 Redirect stubs pointing at the root
 ```
+
+**When editing, edit the root files.** `v1/` is a frozen backup; changes there are
+invisible to anyone. A change meant to be seen goes in `index.html`,
+`publications.html` or `cv.html` at the top level.
 
 ## Preview locally
 
@@ -89,9 +109,13 @@ unpublished work.
 ## Notes
 
 - **Phone number is intentionally not on the site** (it stays in the PDF CV only).
-- **Unpublished work is intentionally not listed.** The JXCDC PDK paper and the
-  IEDM'26 electro-thermal paper are described in the Research section on the home
-  page instead. Add them to `publications.html` once submitted/accepted.
+- **Publication status.** The MATRIX-A5 PDK paper is **accepted at JxCDC'26**
+  (2026-10-17) and is listed on `publications.html` with an *Accepted* badge in
+  both the live site and the v1 backup. The electro-thermal paper was rejected
+  from IEDM'26 and **retargeted to IRPS'27** (submission Oct 2026); it stays
+  described in the Research section and off `publications.html` until it is
+  accepted. Do not quote its MAE or runtime numbers anywhere — they are still
+  placeholders.
 - **Photo:** the hero uses `assets/Minji_Shon.jpg` (495×495 square). To swap it,
   replace that file or change the `src` in `index.html`. Use a square image —
   non-square ones get center-cropped. If the file is missing, the block removes
