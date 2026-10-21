@@ -109,9 +109,11 @@ unpublished work.
 ## Notes
 
 - **Phone number is intentionally not on the site** (it stays in the PDF CV only).
-- **Publication status.** The MATRIX-A5 PDK paper is **accepted at JxCDC'26**
-  (2026-10-17) and is listed on `publications.html` with an *Accepted* badge in
-  both the live site and the v1 backup. The electro-thermal paper was rejected
+- **Publication status.** The MATRIX-A5 PDK paper is **published** in IEEE
+  JxCDC (2026-10-20, DOI `10.1109/JXCDC.2026.3744406`) and is listed on
+  `publications.html` with a DOI link in both the live site and the v1 backup.
+  It is open access (CC BY 4.0). No volume, issue, or page numbers are assigned
+  yet, so the entry stays at the journal name plus year. The electro-thermal paper was rejected
   from IEDM'26 and **retargeted to IRPS'27** (submission Oct 2026); it stays
   described in the Research section and off `publications.html` until it is
   accepted. Do not quote its MAE or runtime numbers anywhere — they are still
